@@ -1,0 +1,43 @@
+.admin-form-title {
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+}
+
+.admin-form-label {
+    font-weight: 600;
+    color: #34495e;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.admin-form-group {
+    margin-bottom: 1.5rem;
+}
+
+.admin-form-control {
+    font-weight: 500;
+}
+
+.admin-form-check-label {
+    font-weight: 600;
+    color: #34495e;
+}
+
+.admin-card {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.admin-card .card-body {
+    padding: 2rem;
+}
+
+.admin-btn {
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+}
+
+.admin-alert {
+    font-weight: 500;
+} 

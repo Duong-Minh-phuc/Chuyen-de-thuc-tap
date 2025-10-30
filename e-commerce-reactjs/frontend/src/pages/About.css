@@ -1,0 +1,188 @@
+.about-container {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.about-hero {
+    position: relative;
+    height: 600px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('../assets/images/20230503-bed-prep-sale-bn.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Section Styles */
+.about-section {
+    padding: 80px 20px;
+}
+
+.section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-content h2 {
+    text-align: center;
+    color: #2c5282;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.section-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4a5568;
+}
+
+/* Story Section */
+.story-section {
+    background-color: #f9f9f9;
+}
+
+/* Values Section */
+.values-section {
+    background-color: white;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.value-card {
+    padding: 2rem;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-icon {
+    font-size: 2.5rem;
+    color: #48bb78;
+    margin-bottom: 1rem;
+}
+
+.value-card h3 {
+    color: #2d3748;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.value-card p {
+    color: #4a5568;
+}
+
+/* Commitment Section */
+.commitment-section {
+    background-color: #f7fafc;
+}
+
+.commitment-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.commitment-item {
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.commitment-item h3 {
+    color: #2c5282;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: white;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.contact-item h3 {
+    color: #2c5282;
+    margin-bottom: 0.5rem;
+}
+
+.contact-item p {
+    color: #4a5568;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .about-section {
+        padding: 40px 20px;
+    }
+
+    .section-content h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+} 

@@ -1,0 +1,128 @@
+.topics-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.topics-loading {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #e94560;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.topics-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.topics-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.topics-header p {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.topics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.topic-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topic-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    color: #333;
+}
+
+.topic-icon {
+    width: 60px;
+    height: 60px;
+    background: #e94560;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.topic-icon svg {
+    font-size: 24px;
+    color: white;
+}
+
+.topic-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.topic-card p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.view-posts {
+    display: inline-block;
+    padding: 8px 20px;
+    background: #333;
+    color: white;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+.topic-card:hover .view-posts {
+    background: #e94560;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .topics-header h1 {
+        font-size: 2rem;
+    }
+
+    .topics-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+} 

@@ -1,0 +1,42 @@
+
+.custom-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;}
+  /* //// */
+  .navbar-nav.ml-auto {
+    margin-left: auto;
+  }
+  
+  .navbar-nav.mr-2 {
+    margin-right: 2rem; /* Adjust the margin as needed */
+  }
+  
+  .navbar-nav .nav-link {
+    margin-right: 1rem; /* Adjust spacing between nav links */
+  }
+  
+  .navbar-nav .ml-auto .nav-link {
+    margin-right: 0; /* Remove extra margin from the last link */
+  }
+  /* /// */
+  .logo-container {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; /* Make the container circular */
+    overflow: hidden; /* Hide the overflow of the image */
+    margin-right: 10px; /* Space between image and text */
+    border: 1px solid rgb(247, 243, 243); /* Add a black border */
+  }
+  
+  .logo-container img {
+    width: 100%;
+    height: auto;
+  
+  }
+  
+  /* // */
+  
+  
